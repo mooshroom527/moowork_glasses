@@ -1,0 +1,701 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.mainNav {
+  background-color: #aa0601;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.mainNav header img {
+  width: 80px;
+  height: 49px;
+}
+
+.mainNav .nav-link {
+  color: white;
+  font-size: 20px;
+}
+
+.mainNav .nav-link:focus,
+.mainNav .nav-link:hover {
+  color: #f6e6e5;
+}
+
+.mainNav header {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 550px) {
+  .mainNav {
+    padding: 0px;
+  }
+
+  .mainNav header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainNav .nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .mainNav .nav-pills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .mainNav .nav-item {
+    flex: 1 1 50%;
+    text-align: center;
+  }
+
+  .mainNav .nav-link {
+    border: 1px solid white !important;
+    padding: 12px;
+    border-radius: 0px !important;
+  }
+  .mainNav {
+    display: block;
+    padding-bottom: 0px;
+  }
+  .mainNav .container {
+    padding: 0px;
+  }
+
+  .mainNav header img {
+    margin: 12px 15px;
+  }
+}
+
+.bgImage {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 787px;
+}
+
+.bgImage h3 {
+  font: normal normal normal 36px/54px Source Han Sans TW;
+  color: #650300;
+}
+
+.bgImage h1 {
+  font: normal normal bold 64px/96px Source Han Sans TW;
+  color: #650300;
+}
+
+.bgImage button {
+  background: var(--unnamed-color-aa0601) 0% 0% no-repeat padding-box;
+  background: #aa0601 0% 0% no-repeat padding-box;
+  font: normal normal medium 20px/30px Source Han Sans TW;
+  color: #ffffff;
+}
+
+.bgImage button:hover {
+  background-color: #650300;
+}
+
+@media (max-width: 768px) {
+  .bgImage {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true");
+    height: 787px;
+  }
+
+  .bgImage h1 {
+    font: normal normal bold 36px/54px Source Han Sans TW;
+  }
+  .bgImage h3 {
+    font: normal normal normal 18px/35px Source Han Sans TW;
+  }
+}
+
+@media (max-width: 500px) {
+  .bgImage {
+    height: 396px;
+  }
+
+  .bgImage h3 {
+    font: normal normal normal 16px/24px Source Han Sans TW;
+  }
+
+  .bgImage h1 {
+    font: normal normal bold 24px/36px Source Han Sans TW;
+  }
+
+  .bgImage button {
+    font: normal normal medium 20px/30px Source Han Sans TW;
+  }
+}
+
+.professionalWork {
+  background: #fbf2f2 0% 0% no-repeat padding-box;
+  padding: 80px 0px;
+}
+
+.professionalWork h2 {
+  font: normal normal bold 48px/72px Source Han Sans TW;
+  color: #650300;
+}
+
+.professionalWork .col img {
+  width: 84px;
+  height: 84px;
+}
+
+.professionalWork .col .glass {
+  width: 100px;
+  height: 84px;
+}
+
+.professionalWork h5 {
+  font: normal normal bold 24px/36px Source Han Sans TW;
+  color: #650300;
+}
+
+.professionalWork .card-body p {
+  font: normal normal normal 16px/24px Source Han Sans TW;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .professionalWork {
+    padding: 40px 0px;
+  }
+  .professionalWork .col img {
+    width: 83px;
+    height: 83px;
+  }
+
+  .professionalWork h5 {
+    font: normal normal bold 24px/36px Source Han Sans TW;
+    color: #650300;
+  }
+
+  .professionalWork .card-body p {
+    font: normal normal normal 16px/24px Source Han Sans TW;
+    color: #000000;
+  }
+}
+
+@media (max-width: 500px) {
+  .professionalWork .col img {
+    margin: 32px 0 24px 0;
+  }
+
+  .professionalWork h2 {
+    font: normal normal bold 24px/36px Source Han Sans TW;
+    color: #650300;
+  }
+}
+
+.classicFrame {
+  padding: 80px 0;
+}
+
+.classicFrame h2 {
+  font: normal normal bold 48px/72px Source Han Sans TW;
+  color: #650300;
+}
+
+.classicFrame .col img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.classicFrame .col h3 {
+  font: italic normal 900 48px/72px Roboto;
+  color: #aa0601;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .classicFrame {
+    padding: 80px 0;
+  }
+
+  .classicFrame .col img {
+    width: 336px;
+    height: 336px;
+  }
+}
+
+@media (max-width: 500px) {
+  .classicFrame {
+    padding: 40px 0;
+  }
+
+  .classicFrame h2 {
+    font: normal normal bold 24px/36px Source Han Sans TW;
+    margin-bottom: 24px;
+  }
+
+  .classicFrame .col h3 {
+    margin-bottom: 24px;
+  }
+
+  .classicFrame .col img {
+    width: 348px;
+    height: 348px;
+  }
+}
+
+.coBrandedDesignFrame {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+}
+
+.coBrandedDesignFrame .imgWeb {
+  display: block;
+}
+
+.coBrandedDesignFrame .imgApp {
+  display: none;
+}
+
+.coBrandedDesignFrame h2 {
+  font: normal normal bold 48px/72px Source Han Sans TW;
+  color: #ffffff;
+  margin-bottom: 48px;
+}
+
+.coBrandedDesignFrame .col img {
+  max-width: 100%;
+  height: auto;
+}
+
+.coBrandedDesignFrame .card-body {
+  background: #ffffff;
+  width: 100%;
+}
+
+.coBrandedDesignFrame .card-body h3 {
+  font: italic normal 900 48px/72px Roboto;
+  color: #aa0601;
+}
+
+.coBrandedDesignFrame .col {
+  padding: 0px;
+}
+
+@media (max-width: 768px) {
+  .coBrandedDesignFrame {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true");
+  }
+
+  .coBrandedDesignFrame .card-body h3 {
+    font: italic normal 900 48px/72px Roboto;
+    color: #aa0601;
+  }
+}
+
+@media (max-width: 500px) {
+  .coBrandedDesignFrame {
+    padding: 40px 0;
+  }
+
+  .coBrandedDesignFrame .container {
+    padding: 0px 14px 0 13px;
+  }
+  .coBrandedDesignFrame h2 {
+    font: normal normal bold 24px/36px Source Han Sans TW;
+    margin-bottom: 24px;
+  }
+
+  .coBrandedDesignFrame .col img {
+    width: 348px;
+    height: 240px;
+  }
+
+  .coBrandedDesignFrame .card-body {
+    width: 348px;
+    height: 88px;
+  }
+
+  .coBrandedDesignFrame .card-body h3 {
+    font: italic normal 900 48px/72px Roboto;
+    color: #aa0601;
+  }
+
+  .coBrandedDesignFrame .col {
+    padding: 0px;
+  }
+}
+
+.customerRecommendations {
+  margin: 80px 0;
+}
+
+.customerRecommendations h2 {
+  font: normal normal bold 48px/72px Source Han Sans TW;
+  color: #650300;
+  margin-bottom: 48px;
+}
+
+.customerRecommendations .col img {
+  width: 100%;
+  height: auto;
+}
+
+.customerRecommendations .col .card {
+  height: 100%;
+  font: normal normal medium 16px/24px Source Han Sans TW;
+  color: #000000;
+  box-shadow: 0px 2px 6px #00000029 !important;
+}
+
+.customerRecommendations .card-body p {
+  font: normal normal normal 16px/24px Source Han Sans TW;
+  color: #000000;
+}
+
+.customerRecommendations .card-body span {
+  font: normal normal normal 14px/21px Source Han Sans TW;
+  color: #707070;
+}
+
+@media (max-width: 768px) {
+  .customerRecommendations {
+    margin: 80px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .customerRecommendations {
+    margin: 4mm 0;
+  }
+
+  .customerRecommendations h2 {
+    font: normal normal bold 24px/36px Source Han Sans TW;
+  }
+
+  .customerRecommendations .card-body p {
+    font: normal normal normal 16px/24px Source Han Sans TW;
+    margin: 8px 0;
+  }
+
+  .customerRecommendations .card-body span {
+    font: normal normal normal 14px/21px Source Han Sans TW;
+  }
+}
+.callMe {
+  background-color: #fbf2f2;
+  padding: 80px 0;
+}
+
+.callMe .container {
+  max-width: 636px;
+}
+
+.callMe h2 {
+  font: normal normal bold 48px/72px Source Han Sans TW;
+  color: #650300;
+  margin-bottom: 48px;
+}
+
+.callMe p {
+  font: normal normal normal 20px/30px Source Han Sans TW;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.callMe label {
+  font: normal normal normal 16px/24px Source Han Sans TW;
+  color: #000000;
+}
+
+.callMe .btnStyle {
+  margin-top: 48px;
+}
+
+.callMe button {
+  background: #aa0601 0% 0% no-repeat padding-box;
+  font: normal normal bold 16px/24px Source Han Sans TW;
+  border-radius: 0px;
+  color: #ffffff;
+  width: 416px;
+  height: 56px;
+}
+
+.callMe button:hover {
+  background-color: #650300;
+  color: #ffffff;
+}
+
+.callMe .labelColor {
+  background-color: #fbf2f2;
+  border: 1px solid black;
+  border-radius: 0;
+}
+
+.callMe .checkboxStyle {
+  border: 1px solid black;
+}
+
+@media (max-width: 768px) {
+  .callMe h2 {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .callMe {
+    padding: 40px 0;
+  }
+
+  .callMe h2 {
+    font: normal normal bold 24px/36px Source Han Sans TW;
+  }
+
+  .callMe p {
+    font: normal normal normal 16px/24px Source Han Sans TW;
+  }
+
+  .callMe .btnStyle {
+    margin-top: 24px;
+  }
+
+  .callMe button {
+    width: 348px;
+  }
+}
+
+footer {
+  background-color: #aa0601;
+  padding-top: 60px;
+}
+
+footer a {
+  text-decoration: none;
+  font: normal normal normal 16px/24px Source Han Sans TW;
+  color: #ffffff;
+  margin-right: 15px;
+}
+
+footer a:hover {
+  color: pink;
+}
+
+footer .list {
+  margin-bottom: 20px;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer li {
+  font: normal normal normal 14px/21px Source Han Sans TW;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+footer .footerLogo img {
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+}
+
+footer .info {
+  font: normal normal normal 36px/54px Source Han Sans TW;
+  color: #ffffff;
+}
+
+footer .material-symbols-outlined {
+  font-size: 36px;
+  margin-right: 22px;
+}
+
+footer .footer-links li {
+  margin-right: 16px;
+}
+
+footer .center {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .center .bottomText {
+  font: normal normal normal 16px/24px Roboto;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+footer .webDisplay {
+  display: block;
+}
+
+footer .appDisplay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding-top: 56px;
+  }
+
+  footer .footerLogo img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 595px) {
+  footer .center {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  footer .webDisplay {
+    display: none;
+  }
+
+  footer .appDisplay {
+    display: block;
+  }
+
+  footer {
+    padding-top: 24px;
+  }
+
+  footer .footerLogo img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+
+  footer .info {
+    font: normal normal normal 16px/24px Source Han Sans TW;
+  }
+
+  footer .material-symbols-outlined {
+    font-size: 18px;
+    margin-right: 11px;
+  }
+
+  footer .list {
+    margin-bottom: 5px;
+  }
+
+  footer .center .bottomText {
+    font: normal normal normal 16px/24px Roboto;
+  }
+
+  footer li {
+    font: normal normal normal 16px/24px Source Han Sans TW;
+  }
+}
